@@ -12,10 +12,12 @@ public class ProbaProjekt {
         Pakli pakli = new Pakli();
         pakli.getPakli();
         for (int i = 0; i < 3; i++) {
-            pakli.kiIrat();
-            int oszlop = oszlopBe();
-            pakli.kever(oszlop);
+            //pakli.kiIrat();
+            oszlopBe();
+//            int oszlop = oszlopBe();
+            //pakli.kever(oszlop);
         }
+        pakli.ezVolt();
     }
 
     private static int oszlopBe() {
@@ -26,7 +28,7 @@ public class ProbaProjekt {
             System.out.print("Kérem adja meg melyik oszlopban van a választott kártya");
             oszlop = sc.nextInt();
             System.out.println("");
-        } while (oszlop > 3 && oszlop < 1);
+        } while (oszlop < 3 && oszlop > 1);
 
         return oszlop;
     }

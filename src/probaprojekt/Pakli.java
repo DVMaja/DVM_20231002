@@ -2,7 +2,7 @@ package probaprojekt;
 
 public class Pakli {
 
-    private String[] pakli;
+    private String[] pakli = {"","","","","","","","","","", "","","","","","","","","","", ""};
 
 //    public Pakli() {
 //        this.pakli = pakli;
@@ -13,18 +13,20 @@ public class Pakli {
         String[] szam = {"A", "K", "D", "J", "10", "9", "8"};
 
 //        for (String string : szin) {
-//            for (int szamDb = 0; szamDb < szam.length; szamDb++) {
-//                pakli[szamDb] = szin+ "_" + szam[szamDb];
+//            for (int szamDb = 0; szamDb < szam.length && szamDb < pakli.length; szamDb++) {
+//                pakli[szamDb] = szin + "_" + szam[szamDb];
 //            }
 //
 //        }
+        
         for (int szinDb = 0; szinDb < szin.length; szinDb++) {
-            for (int szamDb = 0; szamDb < szam.length; szamDb++) {
+            for (int szamDb = 0; szamDb < szam.length && szamDb < pakli.length; szamDb++) {
                 pakli[szamDb] = szin[szinDb] + "_" + szam[szamDb];
-                
+                                
             }
             
         }
+        
 
     }
     public void kiIrat(){
